@@ -17,7 +17,7 @@
 
   <main class="wrap legal" style="padding-top:50px">
     <h1>Privacy Policy – TokTranslate</h1>
-    <p>Draft template – have it reviewed against the final app behaviour and your local law before publishing. Last updated: <span id="d"></span></p>
+    <p>Last updated: <span id="d"></span></p>
 
     <h2>Who we are</h2>
     <p>AetherX Labs ("we") publishes TokTranslate. Contact: <a href="mailto:support@aetherxlabs.co.uk">support@aetherxlabs.co.uk</a>.</p>
@@ -25,19 +25,22 @@
     <h2>What the app does with audio</h2>
     <ul>
       <li><b>Offline mode:</b> speech recognition and translation run on your phone; audio is not uploaded.</li>
-      <li><b>Cloud accuracy mode:</b> while captions are live, short audio clips from the audio you choose to capture are sent to our caption server, which forwards them to speech and translation providers to produce text. Clips are processed and not stored by us.</li>
+      <li><b>Cloud accuracy mode:</b> while captions are live, short audio clips (a few seconds each) from the audio you choose to capture are sent over an encrypted (HTTPS) connection to our caption server. The server forwards each clip to speech and translation providers to produce captions. We do not save the audio or the captions; they are discarded once the caption is returned.</li>
+      <li>The app only captures audio that other apps allow to be captured. It does not use your microphone for cloud captions.</li>
     </ul>
 
     <h2>Service providers</h2>
-    <p>In cloud mode we use OpenAI, Microsoft Azure (Speech and Translator) and Google Cloud Translation. Their own policies apply to data they process.</p>
+    <p>Our caption server is hosted on Render. In cloud mode, audio and text are processed by OpenAI (speech recognition), Microsoft Azure (Speech and Translator) and Google Cloud Translation. These providers may keep data for a limited time under their own terms, for example for abuse monitoring, and their own privacy policies apply. We do not sell your data or use it to train models.</p>
 
     <h2>Information we handle</h2>
     <ul>
-      <li>A random device identifier, used only for usage limits and abuse prevention.</li>
-      <li>Usage counts (minutes processed) for quotas.</li>
-      <li>No account, contacts, location or advertising profile is collected by the app itself.</li>
+      <li>A random installation identifier and a signed token created by our server, used only for usage limits and abuse prevention.</li>
+      <li>Usage counts (minutes of audio processed per day) for quotas.</li>
+      <li>Your IP address, which our hosting provider and server see when you connect, is used for security and rate limiting. We do not use it to identify you.</li>
+      <li>The app stores your settings (such as target language) on your device.</li>
+      <li>No account, contacts, location or advertising profile is collected by the app.</li>
     </ul>
-    <p>If you add ads or subscriptions later, update this section for the ad network and Google Play Billing.</p>
+    <p>The app does not currently show ads or sell subscriptions. If that changes, this policy will be updated first.</p>
 
     <h2>Permissions</h2>
     <ul>
@@ -47,7 +50,7 @@
     </ul>
 
     <h2>Your choices</h2>
-    <p>You can stop capture at any time, switch off cloud mode, or uninstall the app. To ask about your data, email us.</p>
+    <p>You can stop capture at any time, switch off cloud mode, or uninstall the app. To ask about or request deletion of data linked to your installation identifier, email us and we will respond within 30 days.</p>
 
     <h2>Children</h2>
     <p>TokTranslate is not directed at children under 13.</p>
@@ -62,6 +65,6 @@
       <span><a href="index.html">Home</a> · <a href="support.html">Support</a></span>
     </div>
   </footer>
-  <script>document.getElementById("d").textContent = new Date().toLocaleDateString("en-GB", {year:"numeric",month:"long",day:"numeric"});</script>
+  <script>document.getElementById("d").textContent = "19 October 2026";</script>
 </body>
 </html>
