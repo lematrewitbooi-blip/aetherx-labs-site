@@ -39,7 +39,7 @@
       <li>Usage counts (minutes of audio processed per day) for quotas.</li>
       <li>Your IP address, which our hosting provider and server see when you connect, is used for security and rate limiting. We do not use it to identify you.</li>
       <li>The app stores your settings (such as target language) on your device.</li>
-      <li>Free captions do not require an account. Builds with optional Google sign-in send a Google ID token to our server to verify your identity. We do not retain that Google token, your email address or your profile. We store a hashed Google account identifier, an account-session identifier and signed sessions so cloud allowances can follow your account across devices.</li>
+      <li>Free captions do not require an account. Builds with optional Google sign-in send a Google ID token to our server to verify your identity. Our server does not retain that Google token, your email address or your profile. We store a hashed Google account identifier, an account-session identifier and signed sessions so cloud allowances can follow your account across devices. Builds with a profile-photo indicator keep Google's HTTPS photo address in private app storage and fetch the photo from Google to display on your phone, without sending it to our server. The address is removed on sign-out or account deletion; the image is not saved to disk by the app.</li>
       <li>When paid plans are enabled, Google Play processes payments. Our server verifies purchases and stores purchase-token hashes, plan status, expiry and remaining top-up minutes. We do not receive or store your payment-card details.</li>
       <li>We do not collect contacts, precise location or an advertising profile in the app.</li>
     </ul>
