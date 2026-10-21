@@ -31,6 +31,7 @@
 
     <h2>Service providers</h2>
     <p>Our caption server is hosted on Render. In cloud mode, audio and text are processed by OpenAI (speech recognition), Microsoft Azure (Speech and Translator) and Google Cloud Translation. These providers may keep data for a limited time under their own terms, for example for abuse monitoring, and their own privacy policies apply. We do not sell your data or use it to train models.</p>
+    <p>On-device translation uses Google's ML Kit SDK. Translation content is processed on your phone, but the SDK also sends device and app information, installation identifiers, performance metrics, feature events and error codes to Google over HTTPS for diagnostics and usage analytics. Offline translation does not mean the SDK never makes network requests: language-model downloads and diagnostic reporting may use a connection. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy">Google's privacy policy</a>. We do not use this information for advertising.</p>
 
     <h2>Information we handle</h2>
     <ul>
@@ -45,7 +46,7 @@
     <p>The app does not show ads. Paid plans are being prepared during testing; purchases remain disabled until setup and validation are complete. Google sign-in and purchase features are only available in builds that include them.</p>
 
     <h2>Retention and account deletion</h2>
-    <p>Our server does not persist captured audio or caption text. Usage counters, account links and purchase records are kept to provide allowances, recovery and purchase verification while you use the service. Provider-side processing and retention are governed by the providers' terms. Hosting security logs and support correspondence are separate from the app's balance ledger.</p>
+    <p>Our server does not persist captured audio or caption text. Usage counters, account links and purchase records are kept to provide allowances, recovery and purchase verification while you use the service. Provider-side processing and retention, including ML Kit diagnostics, are governed by the providers' terms. Hosting security logs and support correspondence are separate from the app's balance ledger.</p>
     <p>In a build with account features, open <b>Plans and extra minutes</b>, sign in with Google, and choose <b>Delete TokTranslate account</b>. Deletion removes the account association, account usage, active app sessions and unused top-up balance from our live ledger. It signs out all devices. Purchases linked to the deleted account cannot be restored to that account or a newly created account. We retain unlinked purchase-token hashes and revoked status to prevent purchase replay; installation-level and aggregate usage may remain for quota and abuse prevention, without the deleted account link.</p>
     <p><b>Deleting TokTranslate does not delete your Google account and does not cancel a Google Play subscription.</b> Cancel the subscription in Google Play before deleting your TokTranslate account to avoid further charges. Google retains its own payment records under its policies. See <a href="delete-account.html">account and data deletion requests</a> to request deletion without using the app.</p>
 
