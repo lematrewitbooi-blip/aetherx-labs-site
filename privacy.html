@@ -37,6 +37,7 @@
     <ul>
       <li>A random installation identifier and a signed token created by our server, used only for usage limits and abuse prevention.</li>
       <li>Usage counts (minutes of audio processed per day) for quotas.</li>
+      <li>Content-free cloud-provider request records for operational cost reconciliation: UTC request times, provider/service/model labels, submitted audio duration or character counts, request outcomes and HTTP status codes, and numeric token or duration totals when the provider reports them. These records do not contain audio, caption or translation text, API keys, account identifiers or installation identifiers, and are not linked to your account.</li>
       <li>Your IP address, which our hosting provider and server see when you connect, is used for security and rate limiting. We do not use it to identify you.</li>
       <li>The app stores your settings (such as target language) on your device.</li>
       <li>Free captions do not require an account. Builds with optional Google sign-in send a Google ID token to our server to verify your identity. Our server does not retain that Google token, your email address or your profile. We store a hashed Google account identifier, an account-session identifier and signed sessions so cloud allowances can follow your account across devices. Builds with a profile-photo indicator keep Google's HTTPS photo address in private app storage and fetch the photo from Google to display on your phone, without sending it to our server. The address is removed on sign-out or account deletion; the image is not saved to disk by the app.</li>
@@ -46,7 +47,7 @@
     <p>The app does not show ads. Paid plans are being prepared during testing; purchases remain disabled until setup and validation are complete. Google sign-in and purchase features are only available in builds that include them.</p>
 
     <h2>Retention and account deletion</h2>
-    <p>Our server does not persist captured audio or caption text. Usage counters, account links and purchase records are kept to provide allowances, recovery and purchase verification while you use the service. Provider-side processing and retention, including ML Kit diagnostics, are governed by the providers' terms. Hosting security logs and support correspondence are separate from the app's balance ledger.</p>
+    <p>Our server does not persist captured audio or caption text. Usage counters, account links and purchase records are kept to provide allowances, recovery and purchase verification while you use the service. Unlinked content-free provider request records are retained for operational cost reconciliation and are separate from account records; deleting your account does not remove these unlinked records. Provider-side processing and retention, including ML Kit diagnostics, are governed by the providers' terms. Hosting security logs and support correspondence are separate from the app's balance ledger.</p>
     <p>In a build with account features, open <b>Plans and extra minutes</b>, sign in with Google, and choose <b>Delete TokTranslate account</b>. Deletion removes the account association, account usage, active app sessions and unused top-up balance from our live ledger. It signs out all devices. Purchases linked to the deleted account cannot be restored to that account or a newly created account. We retain unlinked purchase-token hashes and revoked status to prevent purchase replay; installation-level and aggregate usage may remain for quota and abuse prevention, without the deleted account link.</p>
     <p><b>Deleting TokTranslate does not delete your Google account and does not cancel a Google Play subscription.</b> Cancel the subscription in Google Play before deleting your TokTranslate account to avoid further charges. Google retains its own payment records under its policies. See <a href="delete-account.html">account and data deletion requests</a> to request deletion without using the app.</p>
 
@@ -73,6 +74,6 @@
       <span><a href="index.html">Home</a> · <a href="support.html">Support</a></span>
     </div>
   </footer>
-  <script>document.getElementById("d").textContent = "21 October 2026";</script>
+  <script>document.getElementById("d").textContent = "22 October 2026";</script>
 </body>
 </html>
