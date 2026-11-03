@@ -52,3 +52,6 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space
 .ad-label { display: block; font-size: 0.7rem; color: var(--muted); margin-bottom: 4px; }
 .legal h2 { margin-top: 32px; font-size: 1.25rem; }
 .legal p, .legal li { color: var(--muted); }
+.plan-price { color: #f5d38a !important; font-size: 1.2rem; font-weight: 700; }
+.btn[aria-disabled="true"] { opacity: .6; cursor: not-allowed; }
+a:focus-visible { outline: 3px solid var(--text); outline-offset: 4px; }

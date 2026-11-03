@@ -27,10 +27,12 @@
       <li>Removed: the hashed account association, account usage, private-testing approval, active app sessions and unused top-up balance. Creating an account again does not restore private-testing approval.</li>
       <li>Purchases linked to a deleted account cannot be restored, including after creating a new account.</li>
       <li>Retained: unlinked purchase-token hashes and revoked status to prevent replay. Installation-level and aggregate usage may remain for quota and abuse prevention without the deleted account link. Hosting security logs and support correspondence are handled separately; we will explain any security or legal retention that applies to your request.</li>
-      <li>We do not persist captured audio or caption text on our server. Cloud providers and Google Play handle their own records under their policies.</li>
+      <li>For the APKPure Stripe edition, customer/account links and account usage are removed; minimal revoked-subscription markers and trial replay-prevention claims are retained. Stripe keeps its own payment records under its policies and applicable law.</li>
+      <li>We do not persist captured audio or caption text on our server. Cloud providers, Google Play and Stripe handle their own records under their policies.</li>
     </ul>
     <h2>Cancel subscriptions separately</h2>
     <p><b>Account deletion does not cancel a Google Play subscription, request a refund or delete your Google account.</b> Before deleting, <a href="https://play.google.com/store/account/subscriptions?package=com.toktranslate.app">manage and cancel your subscription in Google Play</a> to avoid further charges. Paid plans remain disabled during setup and validation.</p>
+    <p><b>Account deletion also does not cancel a Stripe subscription.</b> If you subscribed through the APKPure Stripe edition, use Manage or cancel subscription in that app or the <a href="payments.html">account-linked website billing page</a> before deleting your account. If you have already deleted it or cannot sign in, contact <a href="mailto:support@aetherxlabs.co.uk?subject=TokTranslate%20subscription%20cancellation">support</a> for help cancelling; do not make a second purchase.</p>
     <p><a href="privacy.html">Read the TokTranslate privacy policy</a>.</p>
   </main>
   <footer><div class="wrap"><span>AetherX Labs</span><span><a href="support.html">Support</a> | <a href="privacy.html">Privacy</a></span></div></footer>
